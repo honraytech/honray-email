@@ -14,9 +14,8 @@ thinkphp5 系统邮件发送函数
 #####执行方法send_email($config, $to, $name, $subject, $body, $attachment = null, $src = null)
 
 
-+----------------------------------------------------------
  * 功能：系统邮件发送函数
-+----------------------------------------------------------
+
  * @param string $config       
  *   邮箱配置
  *   'config' => array ( 
@@ -29,7 +28,7 @@ thinkphp5 系统邮件发送函数
  *       'reply_email' => '', 
  *       'reply_name' => '', 
  *       'test_email' => '', 
-    ),
+ *   ),
  * @param string $to            接收邮件者邮箱
  * @param string $name          接收邮件者名称
  * @param string $subject       邮件主题
