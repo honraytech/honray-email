@@ -11,7 +11,7 @@ thinkphp5 系统邮件发送函数
 
 
 
-#####执行方法send_email($config, $to, $name, $subject, $body, $attachment = null, $src = null)
+#####执行方法send_email($config, $to, $name, $subject, $body, $attachment = null)
 
 
  * 功能：系统邮件发送函数
@@ -33,4 +33,3 @@ thinkphp5 系统邮件发送函数
  * @param string $subject       邮件主题
  * @param string $body          邮件内容
  * @param string $attachment 附件列表namespace
- * @param string $src 设置邮件中的图片（路径）;

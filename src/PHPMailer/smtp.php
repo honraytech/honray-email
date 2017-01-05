@@ -46,7 +46,7 @@
  * original author: Chris Ryan
  */
 
-namespace think\email;
+namespace think\email\PHPMailer;
 
 class SMTP {
   /**

@@ -22,20 +22,19 @@
  * @param string $subject       邮件主题
  * @param string $body          邮件内容
  * @param string $attachment 附件列表namespace
- * @param string $src 设置邮件中的图片（路径）;
 +----------------------------------------------------------
  * @return boolean
 +----------------------------------------------------------
  */
 
-use think\email\PHPMailer;
-function send_email($config, $to, $name, $subject, $body, $attachment = null, $src = null)
+use think\email\PHPMailer\PHPMailer;
+
+function send_email($config, $to, $name, $subject, $body, $attachment = null)
 {
     $mail = new PHPMailer();                                // PHPMailer对象
     $mail->CharSet = 'UTF-8';                               // 设置邮件编码
     $mail->IsSMTP();                                        // 设定使用SMTP服务
-    $mail->IsHTML(true);                                    // 可以发送html格式
-    $mail->AddEmbeddedImage($src);                          // 设置邮件中的图片      
+    $mail->IsHTML(true);                                    // 可以发送html格式   
     $mail->SMTPDebug = 0;                                   // 关闭SMTP调试功能
     $mail->SMTPAuth = true;                                 // 启用 SMTP 验证功能
     if ($config['smtp_port'] == 465){

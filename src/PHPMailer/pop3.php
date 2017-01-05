@@ -59,7 +59,7 @@
  * @author Richard Davey
  */
 
-namespace think\email;
+namespace think\email\PHPMailer;
 
 class POP3 {
   /**

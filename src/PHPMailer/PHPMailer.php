@@ -19,9 +19,8 @@
  * @version $Id: class.phpmailer.php 447 2009-05-25 01:36:38Z codeworxtech $
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-use Exception;
 
-namespace think\email;
+namespace think\email\PHPMailer;
 
 class PHPMailer {
 
@@ -682,7 +681,7 @@ class PHPMailer {
    * @return bool
    */
   protected function SmtpSend($header, $body) {
-    require_once $this->PluginDir . 'smtp.class.php';
+    require_once $this->PluginDir . 'smtp.php';
     $bad_rcpt = array();
 
     if(!$this->SmtpConnect()) {
@@ -2294,7 +2293,7 @@ class PHPMailer {
   }
 }
 
-class phpmailerException extends Exception {
+class phpmailerException extends \think\Exception {
   public function errorMessage() {
     $errorMsg = '<strong>' . $this->getMessage() . "</strong><br />\n";
     return $errorMsg;
