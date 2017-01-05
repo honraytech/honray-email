@@ -1,5 +1,5 @@
 # honray-email
-thinkphp5 发送类库
+thinkphp5 系统邮件发送函数
 
 ## 安装
 
