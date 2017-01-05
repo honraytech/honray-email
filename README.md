@@ -15,7 +15,6 @@ thinkphp5 系统邮件发送函数
 
 
  * 功能：系统邮件发送函数
-
  * @param string $config       
  *   邮箱配置
  *   'config' => array ( 
